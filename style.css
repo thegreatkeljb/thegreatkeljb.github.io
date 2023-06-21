@@ -81,7 +81,8 @@
 }
 
 .section-3 img{
-    max-width: 550px;
+    max-width: 37%;
+    max-height: 100%;
     position:absolute;
     bottom: 0;
     z-index: 10;
@@ -196,5 +197,236 @@
     border-radius: 10px;
     font-weight: bold;
     text-decoration: none;
+}
 
+.for-mobile{
+    display: none;
+}
+
+.mobile-footer{
+    display: none;
+}
+
+@media screen and (max-width: 420px)
+{
+    .sec2-mask{
+        display: none;
+    }
+
+    .for-mobile{
+        display: unset;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .for-mobile h1{
+        display: unset;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        top: 80px;
+        color: white;
+        z-index: 1;
+    }
+
+    .for-mobile h3{
+        font-size: 35px;
+        position: absolute;
+        width: 100%;
+        font-weight: bold;
+        left: 20px;
+        top: 70px;
+        color: white;
+        z-index: 1;
+        transform: rotate(-30deg);
+    }
+
+    .x1{
+        font-size: 35px;
+        display: unset;
+        position: absolute;
+        width: 100%;
+        font-weight: bold;
+        left: 40px;
+        top: 150px;
+        color: white;
+        z-index: 1;
+        transform: rotate(-20deg);
+    }
+
+    .x2{
+        font-size: 35px;
+        display: unset;
+        position: absolute;
+        width: 100%;
+        font-weight: bold;
+        left: 100px;
+        top: 245px;
+        color: white;
+        z-index: 1;
+        transform: rotate(5deg);
+    }
+
+    .x3{
+        font-size: 35px;
+        display: unset;
+        position: absolute;
+        width: 100%;
+        font-weight: bold;
+        left: 250px;
+        top: 235px;
+        color: white;
+        z-index: 1;
+        transform: rotate(15deg);
+    }
+
+    .x4{
+        font-size: 35px;
+        display: unset;
+        position: absolute;
+        width: 100%;
+        font-weight: bold;
+        left: 270px;
+        top: 235px;
+        color: white;
+        z-index: 1;
+        transform: rotate(-5deg);
+    }
+
+    .x5{
+        font-size: 35px;
+        display: unset;
+        position: absolute;
+        width: 100%;
+        font-weight: bold;
+        left: 190px;
+        top: 475px;
+        color: white;
+        z-index: 1;
+        transform: rotate(70deg);
+    }
+
+
+    .sec4-mask{
+        grid-area: 2 / 1 / 4 / 4;
+        background-color: #1F1F1F;
+        max-width: 80%;
+        max-height: 99%;
+        z-index: 1;
+    }
+
+    .sec-3-design{
+        display: none
+    }
+
+    .container{
+        background-color: #33363D;
+        grid-auto-rows: 20vh;
+    }
+    .section-2{
+        grid-area: 3 / 1 / 6 / 6;
+        width: 100%;
+        position: relative;
+    }
+
+    .sec-2-content{
+        padding-top: 150px;
+        margin: 20px;
+    }
+
+    .sec-2-content h1{
+        display: none;
+    }
+
+    .sec-2-content h3{
+        display: none;
+    }
+
+    .sec-2-content p{
+        margin-bottom: 10px;;
+        position: relative;
+    }
+
+    .section-3{
+        grid-area: 1 / 1 / 4 / 6;
+        margin-left: 10%;
+        max-height: 80%;
+    }
+
+    .section-3 img{
+        background-image: url(images/imgBataliran-mobile.png);
+        max-width: 100%;
+        max-height: 100%;
+        padding-top: 100px;  
+        z-index: 10;
+    }
+
+    .section-1{
+        grid-area: 1 / 1 / 2 / 6;
+        width: 100%;
+        height: 50px;
+        padding-top: 10px;
+        margin: 0;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        background-color: #121212;
+    }
+
+    .sec-1-content{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .section-1 p{
+        display: none;
+    }
+    
+    .sec-1-content a{
+        padding: 0;
+        margin: 0;
+        display: inline-flex;
+        max-width: 100%;
+        font-size: 30px;
+        background: transparent;
+        text-decoration: none;
+        color: black;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-4{
+        grid-area: 6 / 1 / 11 / 6;
+        width: 100%;
+        background-color: #121212;
+    }
+
+    .section-3 img{
+        max-width: 5;
+        position:relative;
+        z-index: 10;
+    }
+    .mobile-footer{
+        grid-area: 10 / 1 / 11 / 6;
+        width: 100%;
+        height: 20%;
+        display: unset;
+        z-index: 12;     
+        background-color: transparent;
+        justify-items: center;
+        text-align: center;
+        align-items: end;      
+    }
+
+    .mobile-footer p{
+        padding-top: 100px;
+        display: unset;
+        font-size: 10px;
+        color: white;
+        z-index: 100;
+        display: flex;
+        width: 100%; 
+        justify-content: center;
+        
+    }
 }
