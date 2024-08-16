@@ -1,0 +1,522 @@
+@media (max-width:1100px) { /* big landscape tablets, laptops, and desktops */ 
+    p {
+      font-size: 14px;
+    }
+  
+    .name .i-do {
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+  
+    .first-name h1,
+    .f-name-hover h1 {
+      font-size: 160px;
+    }
+    
+    .last-name h1,
+    .l-name-hover h1 {
+      font-size: 260px;
+    }
+  
+    .main-card {
+      padding: 4rem 0;
+    }
+  
+    .section-title h1 {
+      font-size: 160px;
+    }
+  
+    #about-me {
+      overflow-x: hidden;
+      padding: 3rem 0;
+    }
+  
+    #about-me a {
+      font-size: 14px;
+    }
+  
+    #about-me .about-content-picture {
+      align-items: start;
+    }
+    
+    #about-me .myPicture {
+      margin-right:2rem;
+      height: 350px;
+      width: 120rem;
+    }
+  
+    #works {
+      display: flex;
+      flex-direction: column;
+      background-color: #191528;
+      border-radius: 0 0 24px 24px;
+      padding-bottom: 4rem;
+      width: 100%;
+      height: 100%;
+    }
+    
+    #works .section-title {
+      display: flex;
+      position: relative;
+      padding-bottom: 0;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #works .portfolio {
+      display: flex; 
+      flex-direction: column;
+      justify-content: start;
+      width: 100%;
+      height: 100%;
+    }
+    
+    #works .portfolio .portfolio-item {
+      background-color: transparent;
+      width: 100%;
+      height: 400px;
+      padding-bottom: 1rem;
+    }
+  
+    #works .portfolio .portfolio-item .item-link{
+     text-decoration: none;
+     margin: 0;
+     padding: 0;
+    }
+    
+    #works .portfolio .portfolio-item .item-content {
+      position: relative; /* Position content absolutely within the item */
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: none; /* Distribute content vertically */
+    }
+    
+    #works .portfolio .portfolio-item .item-content .item-image {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      box-shadow: none;
+      filter: drop-shadow(0px 0px 4px rgba(212, 131, 218, 0.718));
+    }
+  
+    #works .portfolio .item_four {
+      display: none;
+      opacity: 0;
+      height: 0;
+    }
+    
+    .img_one {
+      background-image: url(/assets/work-modifedvgg.png);
+    }
+    
+    .img_two {
+      background-image: url(/assets/work-pos.png);
+    }
+    
+    .img_three {
+      background-image: url(/assets/work-interns.png);
+    }
+    
+    .img_four {
+      background-image: none;
+    }
+    
+    .works-description {
+      justify-content: center;
+      text-align: center;
+      margin: 0;
+      padding: 0.5rem 0 0 0;
+      text-decoration: none;
+    }
+  
+    .portfolio-item:hover .works-description {
+      justify-content: center;
+    }
+  
+    .portfolio-item:hover .works-description .item-category {
+      display: none;
+      opacity: 0;
+      transition: none;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }  
+  
+    #tech-used {
+      margin-top: 0;
+      padding: 2rem 8rem 4rem 8rem;
+    }
+    
+    #tech-used .main-skill-card h5{
+      text-align: start;
+    }
+    
+    #tech-used .sub-text {
+      font-size: 12px;
+    }
+  
+    #tech-used .company-details .sub-text {
+      font-size: 12px;
+      text-align: end;
+    }
+  
+    #tech-used .card svg {
+      height: 32px;
+      width: 32px;
+      margin: 0.5rem 0.5rem;
+    }
+  
+    #tech-used .card .card-title {
+      font-size: 12px;
+    }
+  
+    #tech-used .card .job-title {
+      font-size: 12px;
+    }
+  }
+  
+  
+  @media (max-width:992px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .nav-link {
+      font-size: 14px;
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }  
+    p {
+      font-size: 14px;
+    }
+  
+    .name {
+      align-content: center;
+    }
+
+    .name .i-do {
+        padding: 0;
+        margin-top: 100px;
+        justify-content: space-between;
+    }
+  
+    .name .i-do h1{
+      font-size: 24px;
+    }
+  
+    .name .i-do svg{
+      height: 28px;
+      width: 28px;
+      margin-right: 0.5rem;
+      
+    }
+  
+    .first-name h1,
+    .f-name-hover h1 {
+      padding-top: 40px;
+      font-size: 120px;
+      letter-spacing: -0.5rem;
+   
+    }
+    
+    .last-name h1,
+    .l-name-hover h1 {
+      font-size: 215px;
+    }
+  
+    .main-card {
+      padding: 4rem 0;
+    }
+  
+    .section-title h1 {
+      font-size: 140px;
+      padding: 0;
+      margin: 0;
+    }
+  
+    #about-me {
+      padding: 3rem 0;
+    }
+  
+    #about-me a {
+      font-size: 12px;
+    }
+  
+    #about-me .about-content-picture {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    #about-me .myPicture {
+      margin-right:2rem;
+      height: 300px;
+      width: 270px;
+      margin: 1rem 0 2rem 0;
+    }
+  
+    #tech-used {
+      margin-top: 0;
+      padding: 2rem 0 3rem 0;
+    }
+    
+    #tech-used .main-skill-card h5{
+      text-align: start;
+    }
+    
+    #tech-used .sub-text {
+      font-size: 12px;
+    }
+  
+    #tech-used .company-details .sub-text {
+      font-size: 12px;
+      text-align: end;
+    }
+
+    
+    #blogs {
+        padding: 4rem 0;
+      }
+
+    #blogs .section-title .h1-manipulated {
+        margin-top: -57px;
+        margin-bottom: 1rem;
+    }
+
+    #blogs .other-blog {
+        padding: 0;
+        margin: 0;
+        margin-top: 2rem;
+    }
+  
+  }
+
+  @media (max-width:768px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+    p {
+      font-size: 14px;
+    }
+
+    .name .i-do {
+        padding: 0;
+        margin-top: 100px;
+        justify-content: space-around;
+    }
+  
+    .name .i-do h1{
+      font-size: 20px;
+    }
+  
+    .name .i-do svg{
+      height: 28px;
+      width: 28px;
+      margin-right: 0.5rem;
+      
+    }
+  
+    .first-name h1,
+    .f-name-hover h1 {
+      padding-top: 50px;
+      font-size: 100px;
+      letter-spacing: -0.5rem;
+   
+    }
+    
+    .last-name h1,
+    .l-name-hover h1 {
+      font-size: 180px;
+    }
+  
+    #about-me a {
+      font-size: 14px;
+    }
+    
+    #tech-used .main-skill-card h5{
+      font-weight: normal;
+    }
+
+    #tech-used .sub-text {
+      font-size: 10px;
+    }
+  
+    #tech-used .company-details .sub-text {
+      font-size: 10px;
+    }
+  
+  }
+
+  @media (max-width:640px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+    p {
+      font-size: 14px;
+    }
+
+    .name .i-do {
+        margin-top: 100px;
+        justify-content: space-between;
+    }
+  
+    .name .i-do h1{
+      font-size: 20px;
+    }
+  
+    .name .i-do svg{
+      height: 28px;
+      width: 28px;
+      margin-right: 0.5rem;
+      
+    }
+  
+    .first-name h1,
+    .f-name-hover h1 {
+      padding-top: 50px;
+      font-size: 90px;
+      letter-spacing: -0.5rem;
+   
+    }
+    
+    .last-name h1,
+    .l-name-hover h1 {
+      font-size: 160px;
+    }
+
+    .section-title h1 {
+        font-size: 120px;
+    }
+  
+
+    #blogs .section-title .h1-manipulated {
+        margin-top: -50px;
+    }
+
+    #blogs {
+        padding: 4rem 1.5rem;
+    }
+  
+  }
+
+  @media (max-width:570px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+    p {
+      font-size: 14px;
+    }
+
+    #hero {
+        padding: 0;
+        margin: 0;
+    }
+
+    #hero .name {
+        padding: 0;
+        margin: 0;
+    }
+
+    .background-me::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: calc(37% + 5rem); 
+        width:  100px; 
+        height: 100px; 
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(159, 42, 151, 0.9);
+        border: none;
+      }
+
+    .name .i-do {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+  
+    .name .i-do h1{
+        text-align: start;
+        font-size: 24px;
+        margin: 0;
+    }
+  
+    .name .i-do svg{
+      height: 24px;
+      width: 24px;
+      margin: 0 0.1rem;
+      
+    }
+  
+    .first-name h1,
+    .f-name-hover h1 {
+      padding-top: 100px;
+      font-size: 55px; 
+      letter-spacing: -5px;
+    }
+    
+    .last-name h1,
+    .l-name-hover h1 {
+    text-align: center;
+      font-size: 100px;
+      letter-spacing: -10px;
+    }
+
+    .section-title h1 {
+        font-size: 90px;
+        letter-spacing: -10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    #freelancing-visual .card-group {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 3rem;
+    }
+
+    #freelancing-visual .card {
+        border-radius: 15px;
+    }
+
+    #works .section-title {
+        padding-bottom: 1rem;
+    }
+
+    #works .portfolio .portfolio-item{   
+        height: 270px;
+    }
+
+    #tech-used {
+        padding: 2rem 0;
+    }
+
+    #tech-used .nav-link{
+        font-size: 12px;
+        margin: 0;
+    }
+
+    #tech-used .main-skill-card {
+        margin: 1rem 0;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #tech-used .main-skill-card .card-title {
+        display: none;
+    }
+
+    #blogs {
+        padding: 4rem 1rem;
+    }
+
+    #blogs .section-title h1 {
+        font-size: 70px;
+    }
+
+    #blogs .section-title .h1-manipulated {
+        margin-top: -30px;
+    }
+  
+  }
+  
+  

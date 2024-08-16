@@ -1,0 +1,258 @@
+* {
+    color: #fff;
+}
+
+body {
+    background-color: #2e2a3f;
+}
+
+ h1 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+li {
+    text-align: justify;
+    cursor: default
+}
+
+
+h5 {
+    font-weight: bold;
+    font-family: "Oswald";
+    cursor: default
+}
+
+p {
+    font-family: "Lato"; 
+    cursor: default  
+}
+
+#product-intro {
+    text-align: center;
+    background-color: #2e2a3f;
+    margin: 0;
+    padding: 0;
+    padding-top: 4rem;
+}
+
+
+.modifiedvgg19,
+.possystem {   
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 500px;
+}
+
+.modifiedvgg19 {
+    background-image: url(/assets/work-modifedvgg.png);
+}
+
+.possystem {
+    background-image: url(/assets/work-pos.png);
+}
+
+#nda {
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+}
+
+#executive-summary {
+    text-align: center;
+    background-color: #191528;
+    border-radius: 50px 50px 0 0;
+    padding-top: 4rem;
+}
+
+#executive-summary  .exec-content {
+    text-align: start;
+    padding: 4rem;
+}
+
+#executive-summary .border{
+    width: 7rem;
+    border-bottom: 1px solid #fff;
+}
+
+#positioning {
+    text-align: center;
+    background-color: #2e2a3f;
+    padding: 4rem 0
+}
+
+#positioning .card-main {
+    display: flex;
+    justify-content: center;
+}
+
+#positioning  .card {
+    margin: 1rem;
+    padding: 0 0.5rem;
+    border-radius: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    width: fit-content;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.515);
+    background: linear-gradient(to right, #f4aae0,#e4e4e4, #499db6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    stroke: #f4aae0; 
+    stroke-width: 0.4rem; 
+    filter: drop-shadow(2px 2px 4px rgba(212, 131, 218, 0.718));
+}
+
+.ui-showcase {
+    background-image: url(/assets/pos-ui.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 1rem 4rem 1rem;
+    filter: drop-shadow(0px 0px 10px rgba(82, 113, 157, 0.718));
+    background-color: transparent;
+    height: 500px;
+}
+
+#positioning  .card svg {
+    width: 32px;
+    height: 32px;
+    margin: 0.5rem;
+    fill: #fff;
+}
+
+#positioning  .card h5 {
+    font-weight: normal;
+    margin-right: 1rem;
+    color: #fff;
+}
+
+
+@media (max-width:992px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    #executive-summary {
+        padding: 0;
+        margin: 0;
+        padding-top: 2rem;
+    }
+
+    #executive-summary .exec-left {
+        padding-bottom: 2rem;
+    }
+
+    .ui-showcase {
+        height: 350px;
+        margin: 0 1rem;
+    }
+  
+  }
+  
+  @media (max-width:768px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .modifiedvgg19,
+    .possystem {   
+        height: 400px;
+    }
+
+    #executive-summary {
+        padding: 0;
+        margin: 0;
+        padding-top: 2rem;
+    }
+
+    #executive-summary .exec-left {
+        padding-bottom: 2rem;
+    }
+
+    .ui-showcase {
+        height: 250px;
+        background-position: center;
+    }
+
+    #positioning .card-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;       
+    }
+
+    #positioning .card {
+        width: 300px;
+        justify-content: center;
+        padding: 0.5rem 0;
+        margin: 0.5rem 0;
+    }
+
+    #positioning  .card svg {
+        margin: 0.5rem 1rem;
+    }
+    
+    #positioning  .card h5 {
+        font-size: 18px;
+        text-align: start;
+    }
+  
+  }
+
+  
+  @media (max-width:570px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+    h1 {
+        font-size: 48px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+
+    .modifiedvgg19,
+    .possystem {   
+        height: 250px;
+    }
+
+    #executive-summary {
+        padding-top: 1rem;
+    }
+
+    #executive-summary .exec-left {
+        padding-bottom: 2rem;
+    }
+
+    #executive-summary .exec-content {
+        padding-bottom: 1rem;
+    }
+
+    .ui-showcase {
+        margin-bottom: 1rem;
+    }
+
+    #positioning .card-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;       
+    }
+
+    #positioning .card {
+        width: 250px;
+    }
+
+    #positioning  .card h5 {
+        font-size: 18px;
+        text-align: start;
+    }
+  }
+  
+  
+

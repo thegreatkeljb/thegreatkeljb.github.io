@@ -1,0 +1,81 @@
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    margin: 1rem 0 2rem 1rem;
+    color: #000;
+    cursor: default;
+  }
+
+  .writing-section-title h1{
+    margin: 0;
+    padding: 0;
+  }
+  
+  h5 {
+    cursor: default;
+  }
+  
+  p {
+    cursor: default;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #fefefe, #f5f5f5);
+    overflow-x: hidden;
+  }
+
+#writing-content {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.writing-content-title {
+    margin: 2rem 0;
+}
+
+.writing-content-title h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.writing-content-title p {
+    font-size: 14px;
+    font-style: italic;
+    color: #747474;
+}
+
+.writing-content-literature {
+    text-align: left;
+    word-spacing: 1px;
+    text-align: justify;
+}
+
+.section-title h1 {
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+    margin: 2.5rem 0 0.5rem 0;
+}
+
+
+
+@media (max-width:570px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+
+  .writing-content-title h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+}
+  .writing-content-title p{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+  
+  .writing-content-literature {
+    font-size: 14px;
+  }
+  
+
+}
