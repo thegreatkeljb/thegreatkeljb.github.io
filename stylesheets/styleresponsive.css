@@ -1,6 +1,13 @@
-@media (max-width:1100px) { /* big landscape tablets, laptops, and desktops */ 
+@media (max-width:1200px) { /* big landscape tablets, laptops, and desktops */ 
     p {
       font-size: 14px;
+    }
+
+    /* TITLE FOR ALL SECTION */
+    .section-title h1,
+    .section-title h1 .unbold {
+      font-size: 120px;
+      padding-bottom: 1.5rem;
     }
   
     .name .i-do {
@@ -22,9 +29,6 @@
       padding: 4rem 0;
     }
   
-    .section-title h1 {
-      font-size: 160px;
-    }
   
     #about-me {
       overflow-x: hidden;
@@ -48,7 +52,7 @@
     #works {
       display: flex;
       flex-direction: column;
-      background-color: #191528;
+      background-color: #2e2a3f;
       border-radius: 0 0 24px 24px;
       padding-bottom: 4rem;
       width: 100%;
@@ -62,29 +66,36 @@
       margin: 0;
       padding: 0;
     }
-    
+/*     
     #works .portfolio {
       display: flex; 
       flex-direction: column;
       justify-content: start;
       width: 100%;
       height: 100%;
-    }
+    } */
     
-    #works .portfolio .portfolio-item {
+    #works .portfolio-item {
       background-color: transparent;
       width: 100%;
       height: 400px;
       padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    #works .container .row .col-6 {
+      padding-top: 0;
+      justify-content: center;
+      width: 100%;
     }
   
-    #works .portfolio .portfolio-item .item-link{
+    #works .portfolio-item .item-link{
      text-decoration: none;
      margin: 0;
      padding: 0;
     }
     
-    #works .portfolio .portfolio-item .item-content {
+    #works .portfolio-item .item-content {
       position: relative; /* Position content absolutely within the item */
       text-decoration: none;
       margin: 0;
@@ -97,7 +108,7 @@
       justify-content: none; /* Distribute content vertically */
     }
     
-    #works .portfolio .portfolio-item .item-content .item-image {
+    #works .portfolio-item .item-content .item-image {
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
@@ -105,31 +116,31 @@
       box-shadow: none;
       filter: drop-shadow(0px 0px 4px rgba(212, 131, 218, 0.718));
     }
-  
-    #works .portfolio .item_four {
+/*   
+    #works .item_four {
       display: none;
       opacity: 0;
       height: 0;
-    }
+    } */
     
-    .img_one {
-      background-image: url(/assets/work-modifedvgg.png);
+    /* .img_one {
+      background-image: url(/assets/pr1.png);
     }
     
     .img_two {
-      background-image: url(/assets/work-pos.png);
+      background-image: url(/assets/pr2.png);
     }
     
     .img_three {
-      background-image: url(/assets/work-interns.png);
+      background-image: url(/assets/pr3.png);
     }
     
     .img_four {
       background-image: none;
-    }
+    } */
     
     .works-description {
-      justify-content: center;
+      justify-content: space-evenly;
       text-align: center;
       margin: 0;
       padding: 0.5rem 0 0 0;
@@ -184,6 +195,14 @@
   
   
   @media (max-width:992px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    /* TITLE FOR ALL SECTION */
+    .section-title h1,
+    .section-title h1 .unbold {
+      font-size: 110px;
+      padding: 0;
+      margin-top: 0;
+    }
+    
     .nav-link {
       font-size: 14px;
       margin: 0.5rem;
@@ -230,12 +249,7 @@
     .main-card {
       padding: 4rem 0;
     }
-  
-    .section-title h1 {
-      font-size: 140px;
-      padding: 0;
-      margin: 0;
-    }
+
   
     #about-me {
       padding: 3rem 0;
@@ -350,6 +364,15 @@
   }
 
   @media (max-width:640px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+    
+    .section-title h1,
+    .section-title h1 .unbold  {
+        letter-spacing: 1;
+    }
+
+    .section-title h1 {
+      font-weight: 400;
+    }
   
     p {
       font-size: 14px;
@@ -384,11 +407,7 @@
       font-size: 160px;
     }
 
-    .section-title h1 {
-        font-size: 120px;
-    }
-  
-
+   
     #blogs .section-title .h1-manipulated {
         margin-top: -50px;
     }
@@ -401,6 +420,13 @@
 
   @media (max-width:570px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
   
+    .section-title h1,
+    .section-title h1 .unbold {
+      font-size: 90px;
+      margin: 0;
+      padding: 0;
+    }
+
     p {
       font-size: 14px;
     }
@@ -460,13 +486,6 @@
       letter-spacing: -10px;
     }
 
-    .section-title h1 {
-        font-size: 90px;
-        letter-spacing: -10px;
-        margin: 0;
-        padding: 0;
-    }
-
     #freelancing-visual .card-group {
         display: flex;
         flex-direction: column;
@@ -506,13 +525,15 @@
     }
 
     #blogs {
-        padding: 4rem 1rem;
+        padding: 2rem 1rem;
     }
 
-    #blogs .section-title h1 {
+    /* #blogs .section-title h1 {
         font-size: 70px;
+    } */
+    #blogs .section-title h1 {
+      padding-bottom: 1.5rem;
     }
-
     #blogs .section-title .h1-manipulated {
         margin-top: -30px;
     }
