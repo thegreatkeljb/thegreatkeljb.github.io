@@ -797,12 +797,7 @@
   }
   
   #blogs .other-blog h5 {
-    background: linear-gradient(to bottom, #f4aae0, #1a93b8);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    stroke: #f4aae0; 
-    width: fit-content;
-    stroke-width: 0.4rem; 
+    color: #f6f6f6; 
     padding-bottom: 1rem;
   }
   
