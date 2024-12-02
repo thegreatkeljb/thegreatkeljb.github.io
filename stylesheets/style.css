@@ -223,10 +223,6 @@
   }
 
   #hero .hero-contacts svg:hover {
-    height: 32px;
-    width: 32px;
-    fill: #ffffff;
-    margin-right: 1rem;
     stroke: #323232; 
     stroke-width: 0.4rem; 
     filter: drop-shadow(2px 2px 4px rgba(120, 120, 120, 0.718));
