@@ -363,6 +363,7 @@
   @media (max-width:640px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
     #hero {
       padding: 3rem 0;
+      background-size: cover;
     }
 
     #hero .img-primary {
