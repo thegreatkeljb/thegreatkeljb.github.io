@@ -1,18 +1,30 @@
+:root {
+  --highlight: rgb(119, 220, 248);
+  --primary-color: #ffffff;
+  --primary-transparent: #ffffff00;
+  --secondary-color: #F5F5F7;
+  --secondary-transparent: #F5F5F700;
+  --font-primary: #000;
+}
+
 * {
-    color: #000000;
+    color: var(--font-primary);
     font-family: "Lato", Helvetica;
     font-size: 16px;  
 }
   
-.section-title h1 {
-    font-family: "Oswald";
-    font-size: 200px;
-    letter-spacing: -1rem;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(-1px -2px 4px rgba(145, 193, 235, 0.718));
-    -webkit-text-stroke: 2px rgba(218, 155, 232, 0.48) ;
-    text-align: center;
-  }
+
+.section-title h1,
+.section-title h1 .unbold  {
+  font-family: "Oswald";
+  font-size: 120px;
+  letter-spacing: -0.5rem;
+  color: var(--font-primary);
+}
+
+.section-title h1 .unbold {
+  font-weight: 200;
+} 
   
 .writing-section-title h1{
     margin: 0;
@@ -38,7 +50,7 @@ a {
 
 
 #blogs {
-    background-color: #191528;
+    background-color: var(--primary-color);
     padding: 2rem 5rem;
     width: 100%;
   }
@@ -52,12 +64,14 @@ a {
   }
   
   #blogs .blog-card {
+    background-color: var(--secondary-color);
     margin: 0;
     padding: 0;
     box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.5);
   }
   
   #blogs .blog-content {
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -66,11 +80,17 @@ a {
   
   #blogs .blog-image {
     height: 340px;
+    background-color: var(--secondary-color);
     padding: 0;
     margin: 0;
     filter: none;
     box-shadow: none;
     border: none;
+    border: #acabab 2px solid;
+  }
+
+  #blogs .blog-card .work-image-one-r {
+    background-color: #fff;
   }
   
   #blogs .other-blog {
@@ -82,13 +102,14 @@ a {
   }
   
   #blogs .other-blog h5 {
-    background: linear-gradient(to bottom, #f4aae0, #1a93b8);
+    /* background: linear-gradient(to bottom, #f4aae0, #1a93b8);
     background-clip: text;
     -webkit-text-fill-color: transparent;
     stroke: #f4aae0; 
     width: fit-content;
     stroke-width: 0.4rem; 
-    padding-bottom: 1rem;
+    padding-bottom: 1rem; */
+    color: var(--font-primary);
   }
   
   #blogs .other-blog-content{
@@ -121,21 +142,21 @@ a {
   #blogs .blog-title{
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
+    color: var(--font-primary);
     text-decoration: none;
   }
   
   #blogs .blog-details {
     font-size: 14px;
-    color: #c7c7c7;
+    color: var(--font-primary);
     font-weight: 400;
     letter-spacing: 0.5px;
   }
   
   #blogs .btn {
     width:7rem;
-    color: #fff;
-    background-color: transparent;
+    color: var(--font-primary);
+    border: var(--font-primary) 2px solid;
   }
   
   #blogs .btn:hover {
@@ -162,15 +183,19 @@ a {
     background-image: url(/assets/imgBlog1.png);
 }
 
+.work-image-one-r,
 .work-image-one,
 .work-image-two,
 .work-image-three,
 .work-image-four   {
-    background-color: #1e1b2a;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+.work-image-one-r {
+  background-image: url(/assets/convolutional\ layers.png);
+}
 
 .work-image-one {
     background-image: url(/assets/work-modifedvgg.png);

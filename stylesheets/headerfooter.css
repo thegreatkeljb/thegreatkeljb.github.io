@@ -29,7 +29,7 @@ h1 {
   }
 
   .scrolled  .dark .nav-link {
-    color: #fff;
+    color: var(--font-primary);
   }
   
   .nav-container {
@@ -43,7 +43,7 @@ h1 {
   
   .navbar {
     display: flex;
-    padding: 24px 0px 24px 0px;
+    padding: 12px 0px 12px 0px;
     margin: 0;
   }
 
@@ -73,10 +73,9 @@ h1 {
     color: #fff;
   }
 
- 
 
 .nav-link:hover {
-  background: linear-gradient(to top, #e9a8dd, #7cc7de);
+  background: linear-gradient(to top, #c5bd2d, #988206);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   stroke: #f4aae0; 

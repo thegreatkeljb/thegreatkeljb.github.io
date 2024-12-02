@@ -1,28 +1,78 @@
+@media (max-width:1300px) {
+  #hero .img-primary {
+    width: 380px;
+  }
+  
+  #hero .img-eyes {
+    width: 380px;
+  }
+  
+  #hero .img-secondary-container .img-secondary {
+    width: 180px;
+  }
+}
+
 @media (max-width:1200px) { /* big landscape tablets, laptops, and desktops */ 
+    #hero .left-container,
+    #hero .right-container {
+      justify-content: center;
+      align-items: center;
+    }
+
+    #hero .left-container .hero-contacts {
+      margin: 1rem 0;
+    }
+
+    #hero .right-container img {
+      margin: 1rem 0.25rem;
+    }
+    
+    #hero .img-primary {
+      width: 300px;
+    }
+    
+    #hero .img-eyes {
+      width: 300px;
+    }
+    
+    #hero .img-secondary-container .img-secondary {
+      width: 145px;
+    }
+
+    #hero .name,
+    #hero .name .highlight {
+      font-family: "Oswald";
+      font-size: 40px;
+      letter-spacing: -2px;
+      color: var(--font-primary);
+      text-align: center;
+      font-weight: 400;
+    }
+
+    #hero .name .highlight {
+      font-size:62px;
+      font-weight: 600;
+    } 
+
     p {
       font-size: 14px;
     }
 
+    .navbar-nav {
+      justify-content: space-around;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }  
+
     /* TITLE FOR ALL SECTION */
     .section-title h1,
     .section-title h1 .unbold {
-      font-size: 120px;
+      font-size: 110px;
       padding-bottom: 1.5rem;
-    }
-  
-    .name .i-do {
-      justify-content: space-between;
-      padding: 0 2rem;
-    }
-  
-    .first-name h1,
-    .f-name-hover h1 {
-      font-size: 160px;
-    }
-    
-    .last-name h1,
-    .l-name-hover h1 {
-      font-size: 260px;
     }
   
     .main-card {
@@ -52,9 +102,9 @@
     #works {
       display: flex;
       flex-direction: column;
-      background-color: #2e2a3f;
+      background-color: var(--primary-color);
       border-radius: 0 0 24px 24px;
-      padding-bottom: 4rem;
+      padding-bottom: 0;
       width: 100%;
       height: 100%;
     }
@@ -66,14 +116,6 @@
       margin: 0;
       padding: 0;
     }
-/*     
-    #works .portfolio {
-      display: flex; 
-      flex-direction: column;
-      justify-content: start;
-      width: 100%;
-      height: 100%;
-    } */
     
     #works .portfolio-item {
       background-color: transparent;
@@ -85,7 +127,7 @@
     #works .container .row .col-6 {
       padding-top: 0;
       justify-content: center;
-      width: 100%;
+      /* width: 100%; */
     }
   
     #works .portfolio-item .item-link{
@@ -117,28 +159,6 @@
       box-shadow: none;
       border: 2px solid #c7c7c7;
     }
-/*   
-    #works .item_four {
-      display: none;
-      opacity: 0;
-      height: 0;
-    } */
-    
-    /* .img_one {
-      background-image: url(/assets/pr1.png);
-    }
-    
-    .img_two {
-      background-image: url(/assets/pr2.png);
-    }
-    
-    .img_three {
-      background-image: url(/assets/pr3.png);
-    }
-    
-    .img_four {
-      background-image: none;
-    } */
     
     .works-description {
       justify-content: space-evenly;
@@ -171,7 +191,7 @@
     }
     
     #tech-used .sub-text {
-      font-size: 12px;
+      font-size: 14px;
     }
   
     #tech-used .company-details .sub-text {
@@ -179,72 +199,52 @@
       text-align: end;
     }
   
-    #tech-used .card svg {
-      height: 32px;
-      width: 32px;
-      margin: 0.5rem 0.5rem;
-    }
-  
     #tech-used .card .card-title {
-      font-size: 12px;
+      font-size: 14px;
     }
   
     #tech-used .card .job-title {
-      font-size: 12px;
+      font-size: 14px;
     }
   }
   
   
   @media (max-width:992px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
-    /* TITLE FOR ALL SECTION */
-    .section-title h1,
-    .section-title h1 .unbold {
-      font-size: 110px;
-      padding: 0;
-      margin-top: 0;
-    }
-    
-    .nav-link {
-      font-size: 14px;
-      margin: 0.5rem;
-      padding: 0.5rem;
-    }  
-    p {
-      font-size: 14px;
-    }
-  
-    .name {
-      align-content: center;
+    #hero {
+      height: auto;
+      padding: 3rem 0;
     }
 
-    .name .i-do {
-        padding: 0;
-        margin-top: 100px;
-        justify-content: space-between;
-    }
-  
-    .name .i-do h1{
-      font-size: 24px;
-    }
-  
-    .name .i-do svg{
-      height: 28px;
-      width: 28px;
-      margin-right: 0.5rem;
-      
-    }
-  
-    .first-name h1,
-    .f-name-hover h1 {
-      padding-top: 40px;
-      font-size: 120px;
-      letter-spacing: -0.5rem;
-   
+    #hero .right-container {
+      display: none;
     }
     
-    .last-name h1,
-    .l-name-hover h1 {
-      font-size: 215px;
+    #about-me .section-title,
+    #tech-used .section-title,
+    #works .section-title {
+      justify-content: center;
+      text-align: center;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+    
+    /* TITLE FOR ALL SECTION */
+    .section-title h1,
+    #skills .section-title h1,
+    .section-title h1 .unbold {
+      font-size: 100px;
+      padding: 0;
+      margin: 0;
+    }
+
+    #skills .logos .logos-slide svg {
+      height: 70px;
+      width: 70px;
+      margin: 12px 18px;
+    }
+    
+    p {
+      font-size: 14px;
     }
   
     .main-card {
@@ -272,6 +272,12 @@
       height: 300px;
       width: 300px;
       margin: 1rem 0 2rem 0;
+    }
+
+    #works .container .row .col-6 {
+      padding-top: 0;
+      justify-content: center;
+      width: 100%;
     }
   
     #tech-used {
@@ -311,40 +317,11 @@
   }
 
   @media (max-width:768px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
-  
+
     p {
       font-size: 14px;
     }
 
-    .name .i-do {
-        padding: 0;
-        margin-top: 100px;
-        justify-content: space-around;
-    }
-  
-    .name .i-do h1{
-      font-size: 20px;
-    }
-  
-    .name .i-do svg{
-      height: 28px;
-      width: 28px;
-      margin-right: 0.5rem;
-      
-    }
-  
-    .first-name h1,
-    .f-name-hover h1 {
-      padding-top: 50px;
-      font-size: 100px;
-      letter-spacing: -0.5rem;
-   
-    }
-    
-    .last-name h1,
-    .l-name-hover h1 {
-      font-size: 180px;
-    }
   
     #about-me a {
       font-size: 14px;
@@ -355,17 +332,55 @@
     }
 
     #tech-used .sub-text {
-      font-size: 10px;
+      font-size: 12px;
     }
   
     #tech-used .company-details .sub-text {
-      font-size: 10px;
+      font-size: 12px;
+      #tech-used .main-skill-card h5{
+      text-align: start;
+    }
+    
+    #tech-used .sub-text {
+      font-size: 12px;
     }
   
+    #tech-used .company-details .sub-text {
+      font-size: 12px;
+      text-align: end;
+    }
+  
+    #tech-used .card .card-title {
+      font-size: 12px;
+    }
+  
+    #tech-used .card .job-title {
+      font-size: 12px;
+    }
+    }
   }
 
   @media (max-width:640px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
-    
+    #hero {
+      padding: 3rem 0;
+    }
+
+    #hero .img-primary {
+      width: 250px;
+    }
+
+    #hero .name,
+    #hero .name .highlight {
+      font-size: 39px;
+      letter-spacing: -2px;
+      font-weight: 300;
+    }
+
+    #hero .name .highlight {
+      font-size:60px;
+      font-weight: 500;
+    } 
+
     .section-title h1,
     .section-title h1 .unbold  {
         letter-spacing: 1;
@@ -436,85 +451,81 @@
   }
 
   @media (max-width:570px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
-  
     body {
       overflow-x: hidden;
     }
-    .section-title h1,
-    .section-title h1 .unbold {
-      font-size: 90px;
-      margin: 0;
+
+    #hero {
       padding: 0;
+      margin: 0;
+  }
+
+    #hero .grand-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+
+    #hero .center-container {
+      margin-top: 2rem;
+    }
+
+    /* Will enable once theres something useful */
+    #hero .right-container {
+      display: none;
+    }
+
+    #about-me,
+    #tech-used,
+    #works {
+      padding: 1rem  0;
+      margin: 0;
+    }
+
+    #about-me .section-title,
+    #tech-used .section-title,
+    #works .section-title {
+      justify-content: center;
+      text-align: center;
+      margin: 0;
+      padding-bottom: 1rem;
+    }
+    
+    /* TITLE FOR ALL SECTION */
+    .section-title h1,
+    #skills .section-title h1,
+    .section-title h1 .unbold {
+      font-size: 72px;
+      letter-spacing: -0.3rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    #skills {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+    #skills .logos-container{
+      width: 100%;
+    }
+
+    #skills .logos .logos-slide svg {
+      height: 50px;
+      width: 50px;
+      margin: 8px 12px;
+    }
+
+    .logos::after { 
+      right: 0;
+      background: linear-gradient(to right, var(--secondary-transparent), var(--secondary-color));
+  }
 
     p {
       font-size: 14px;
     }
 
-    #hero {
-        padding: 0;
-        margin: 0;
-    }
-
-    #hero .name {
-        padding: 0;
-        margin: 0;
-    }
-
-    .background-me::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: calc(37% + 5rem); 
-        width:  100px; 
-        height: 100px; 
-        border-radius: 50%;
-        box-shadow: 0 0 10px rgba(159, 42, 151, 0.9);
-        border: none;
-      }
-
-    .name .i-do {
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-    }
-  
-    .name .i-do h1{
-        text-align: start;
-        font-size: 24px;
-        margin: 0;
-    }
-  
-    .name .i-do svg{
-      height: 24px;
-      width: 24px;
-      margin: 0 0.1rem;
-      
-    }
-  
-    .first-name h1,
-    .f-name-hover h1 {
-      padding-top: 100px;
-      font-size: 55px; 
-      letter-spacing: -5px;
-    }
-    
-    .last-name h1,
-    .l-name-hover h1 {
-    text-align: center;
-      font-size: 100px;
-      letter-spacing: -10px;
-    }
-
-    #freelancing-visual .card-group {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem 3rem;
-    }
-
-    #freelancing-visual .card {
-        border-radius: 15px;
-    }
 
     #works .section-title {
         padding-bottom: 1rem;
@@ -526,6 +537,24 @@
 
     #tech-used {
         padding: 2rem 0;
+    }
+
+    #tech-used .trigger-experience .card,
+    #tech-used .trigger-awards .card {
+      flex-direction: column;
+    }
+
+    #tech-used .trigger-experience .card-header,
+    #tech-used .trigger-awards .card .card-header {
+      /* background-image: url(/assets/logos/ramon.png); */
+      padding: 5px 0 5px 5px;
+      width: 30%;
+    } 
+
+    #tech-used .trigger-experience .card-header img,
+    #tech-used .trigger-awards .card .card-header img {
+      width: 70%;
+      border-radius: 16px;
     }
 
     #tech-used .nav-link{
@@ -544,20 +573,32 @@
         display: none;
     }
 
-    #blogs {
-        padding: 2rem 1rem;
-    }
-
-    /* #blogs .section-title h1 {
-        font-size: 70px;
-    } */
-    #blogs .section-title h1 {
-      padding-bottom: 1.5rem;
-    }
-    #blogs .section-title .h1-manipulated {
-        margin-top: -30px;
+    #tech-used .card-body,
+    #tech-used .company-details {
+      padding: 0;
+      margin: 0;
     }
   
+    #tech-used .main-skill-card h5{
+      text-align: start;
+    }
+    
+    #tech-used .sub-text {
+      font-size: 12px;
+    }
+  
+    #tech-used .company-details .sub-text {
+      font-size: 12px;
+      text-align: end;
+    }
+  
+    #tech-used .card .card-title {
+      font-size: 12px;
+    }
+  
+    #tech-used .card .job-title {
+      font-size: 12px;
+    }
   }
   
   

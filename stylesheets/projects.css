@@ -1,0 +1,189 @@
+:root {
+    --highlight: rgb(119, 220, 248);
+    --primary-color: #ffffff;
+    --primary-transparent: #ffffff00;
+    --secondary-color: #F5F5F7;
+    --secondary-transparent: #F5F5F700;
+    --font-primary: #000;
+  }
+
+  
+  * {
+    color: #000;
+    font-family: "Lato", Helvetica;
+    font-size: 16px;  
+  }
+
+  .section-title h1,
+  .section-title h1 .unbold  {
+    font-family: "Oswald";
+    font-size: 100px;
+    letter-spacing: -0.5rem;
+    color: var(--font-primary);
+  }
+
+  .section-title h1 .unbold {
+    font-weight: 200;
+  } 
+
+  .section-title {
+    padding: 3rem 0 1rem 0;
+  }
+
+  #projects {
+    padding-bottom: 4rem;
+    background: url(/assets/work-bg.png);
+    background-size: contain;
+  }
+
+  #projects .card {
+    /* background-color: var(--secondary-color); */
+    display: flex;
+    background-color: transparent;
+    margin: 1rem;
+    border-radius: 0; 
+    border: none;
+    text-decoration: none;
+  }
+
+  #projects img {
+    background-color: var(--secondary-color);
+    border: #c0c0c0 2px solid;
+  }
+
+  #projects .card-title {
+    font-weight: 800;
+  }
+
+  #projects .card-text {
+    padding: 0;
+    width: auto;
+    text-align: justify;
+  }
+
+  #projects .card-text .text {
+    margin: 0;
+    background-color: rgb(161, 161, 161);;
+    border: #a1a1a1 2px solid;
+    color: #1c1c1c;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  #projects .card:hover .card-title {
+    text-decoration: underline;
+  }
+
+  #projects .card:hover .text{
+    background-color: goldenrod;
+  }
+
+  #projects .card:hover img {
+    transform: scale(0.98); 
+    transition: transform 0.5s ease-in-out; 
+    box-shadow: 1px 1px 4px 0 #5a5959;
+}
+
+@media (max-width:1200px) {
+    #projects .card {
+        margin: 7px;
+    }
+
+    #projects .card-title {
+        font-size: 18px;
+    }
+
+    #projects .card-text {
+        font-size: 14px;
+    }
+
+    #projects .card-text .text {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:992px)  {
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #projects .card {
+        margin: 1rem;
+        flex-direction: row;
+        border: #a1a1a1 2px solid;
+    }
+
+    #projects .card img {
+        width: 240px;
+        border: none;
+    }
+}
+
+@media (max-width:768px)  {
+    .section-title {
+        margin-top: 2rem;
+        padding: 0;
+    }
+
+    .section-title h1,
+    .section-title h1 .unbold  {
+        font-size: 70px;
+        letter-spacing: -4px;
+    }
+
+    #projects .card img {
+        width: 200px;
+        border: none;
+    }
+}
+
+
+@media (max-width:570px) {
+    .section-title {
+        margin: 1.5rem 0 1rem 0;
+    }
+
+    .section-title h1,
+    .section-title h1 .unbold  {
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #projects .card {
+        margin: 1rem;
+        flex-direction: column;
+        border: none;
+        width: 70%;
+    }
+
+    #projects .card img {
+        width: 100%;
+        border: #a1a1a1 2px solid;
+    }
+}
+
+@media (max-width:380px) {
+    .section-title h1,
+    .section-title h1 .unbold  {
+        font-size: 60px;
+    }
+    
+    #projects .card {
+        width: 100%;
+        padding: 0 2rem;
+    }
+}
