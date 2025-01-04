@@ -146,6 +146,25 @@ p {
     margin: 1rem;
 }
 
+
+/* For Photo Cols */
+#executive-summary  .exec-content .left-content{
+    display: flex;
+    padding: 2rem 3rem;
+    justify-content: center;
+}
+
+#executive-summary  .exec-content .right-content .main-text {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+#executive-summary  .exec-content .left-content img {
+    width: 90%;
+    border-radius: 16px;
+    border: #a1a0a0 2px solid;
+}
+
 #positioning {
     text-align: center;
     background-color: var(--font-primary);
