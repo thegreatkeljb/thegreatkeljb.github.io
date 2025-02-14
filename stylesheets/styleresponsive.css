@@ -39,6 +39,10 @@
       width: 145px;
     }
 
+    #hero p {
+      font-size: 12px;
+    }
+
     #hero .name,
     #hero .name .highlight {
       font-family: "Oswald";
